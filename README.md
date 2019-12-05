@@ -36,7 +36,8 @@ The first way to build the Snap might be to do it with only private keys.
 This route requires figuring out a clever way to ensure automatic, atomic, and failure resistent transactions. I have a feeling this way will require a lot of upfront work, custom javascript, and clever usage of snaps. The DEXWallet team has convinced me a method for achieving such an approach is ready-ish.
 
 The recipes can be accessed via @Alexintosh - if you're lucky ;)
-
+WIP Docs:
+https://github.com/dexlab-io/fvm
 https://twitter.com/Alexintosh/status/1202111497637380097
 
 _Smart Wallet/Bank Approach_
