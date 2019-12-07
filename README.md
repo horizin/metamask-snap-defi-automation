@@ -1,22 +1,49 @@
 # Decentralized Finance Automation MetaMask Snap
 
-### User Story
+## User Story
 
 Over the weekend I sent my long-time buddy ETH. He shouldn't need to learn about InstaDapp, Smart Wallets, Decentralized Exchanges, Compound, etc.... to leverage his money. That's silly and doesn't scale.
 
-### Technical Requirements
+## Technical Requirements
 
-- MetaMask Snap and Maybe Smart Wallet
-- Automated Transaction Signing
-- Difficulty Mode Selection
+- Application Installation Page
+- MetaMask Snap
+- Automated Decentralized Finance Transactions
+- User Difficulty Mode Selection
+- Deadman Switch
+- Backup Service for Trust Anchor to Recover Funds (Strech Goal)
 
-### Specification
+## Resources
 
 When you arrive at a fork in the road, take it.
 
-#### Metamask Snap
+- DeFi Zap https://defizap.com/
+- DeFi Recipes https://github.com/dexlab-io/fvm
+- Smart Wallet https://medium.com/@ChrisLundkvist/exploring-simpler-ethereum-multisig-contracts-b71020c19037
+- Example dApp https://instadapp.io/
+
+## Project Specification
+
+To qualify for any bounties please review the project specification document. If any questions/concerns arise please open an issue or contact @kamescg directly.
+
+### Application
 
 To install the Snap a user will visit a safe, trusted website. When installing the user might select between 3 different choices: Easy, Intermediate and Advanced.
+
+### Metamask Snap
+
+The MetaMask Snap will help everyday users avoid the technical overhead of learning Ethereum and Decentralized Finance to participate. The focus should be on simplicity. The less user actions, after installation, the better. Simple. Elegant.
+
+- Batch signing using application/plugin specific private key.
+- Deadman swtich to protect user from losing funds.
+
+### Automated Transaction Signing
+
+This is the technically interesting part. And is very open for interpreation. In other words, to accomplish an automated decentralized finance snap can probably be achieved multiple ways - all with different pros/cons.
+
+# Engineering Topics
+
+## Plugin Architecture
 
 Due to how Snaps are currently built, to accomplish this it might require 3 separate snaps to cater to the unique user preferences.
 
@@ -26,11 +53,8 @@ After that everything needs to be very low touchpoint. The less the user has to 
 
 No more user actions after this installation is optimal. Simple. Elegant.
 
-### Automated Transaction Signing
+## Private Key Approach
 
-This is the technically interesting part. And is very open for interpreation. In other words, to accomplish an automated decentralized finance snap can probably be achieved multiple ways - all with different pros/cons.
-
-_Private Key Approach_
 The first way to build the Snap might be to do it with only private keys.
 
 This route requires figuring out a clever way to ensure automatic, atomic, and failure resistent transactions. I have a feeling this way will require a lot of upfront work, custom javascript, and clever usage of snaps. The DEXWallet team has convinced me a method for achieving such an approach is ready-ish.
@@ -39,7 +63,8 @@ The recipes can be accessed via @Alexintosh - if you're lucky ;)
 
 https://twitter.com/Alexintosh/status/1202111497637380097
 
-_Smart Wallet/Bank Approach_
+## Smart Wallet/Bank Approach
+
 The second method might be to utilize a Smart Wallet.
 
 A Smart Wallet/Bank would alleviate the private key orchestration concerns, and allow for several novel methods to automate a user's decentralized bank.
