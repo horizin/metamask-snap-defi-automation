@@ -1,5 +1,15 @@
 # Decentralized Finance Automation MetaMask Snap
 
+The Era of Decentralized Finance is upon us.
+
+New experiments are happening all around us, both big and small. Whether it's Compound with automatic interest, Multi-Collatoral DAI or enhancements like DeFiZap and FVM.
+
+When we talk about Ethereum, we talk about it as if the average user should care. People have financial advisors who manage the details. We need automated blockchain advisor to fill a similar role.
+
+The Decentralized Finance Automation MetaMask Snap is an experiment to push blockchain user experience forward.
+
+Optimistic UI is yesterday's news. Today it's automated UI.
+
 ## User Story
 
 Over the weekend I sent my long-time buddy ETH. He shouldn't need to learn about InstaDapp, Smart Wallets, Decentralized Exchanges, Compound, etc.... to leverage his money. As an Ethereum Developer I think we should build the tools and plugins neccesary to completely remove "blockchain/ethereum" from the product conversation and simply provide value to people.
