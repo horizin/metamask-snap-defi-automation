@@ -2,16 +2,28 @@
 
 ## User Story
 
-Over the weekend I sent my long-time buddy ETH. He shouldn't need to learn about InstaDapp, Smart Wallets, Decentralized Exchanges, Compound, etc.... to leverage his money. That's silly and doesn't scale.
+Over the weekend I sent my long-time buddy ETH. He shouldn't need to learn about InstaDapp, Smart Wallets, Decentralized Exchanges, Compound, etc.... to leverage his money. As an Ethereum Developer I think we should build the tools and plugins neccesary to completely remove "blockchain/ethereum" from the product conversation and simply provide value to people.
 
-## Technical Requirements
+## Technical Overview
 
-- Application Installation Page
-- MetaMask Snap
-- Automated Decentralized Finance Transactions
-- User Difficulty Mode Selection
-- Deadman Switch
-- Backup Service for Trust Anchor to Recover Funds (Strech Goal)
+To contribute to the project please familiarize yourself with the projects technology stack.
+
+- Lerna & Yarn Workspaces
+- Modular Features/Design
+- Javascript
+- Ethereum
+  - Wallet
+    - MetaMask
+    - MetaMask Snap
+  - DeFi Protocols
+    - Compound
+    - Dharma
+  - Ethereum Name System
+  - Recovery
+    - Deadman Switch
+    - Social Recovery
+
+Building a secure, open source and useful Decentralized Finance Automation MetaMask Snap requires a general understanding of several verticals like modern Javascript bundling processes, blockchain essentials like transaction management and signatures, plus more familiarity with the pros/cons of both private key and smart contract wallets.
 
 ## Resources
 
@@ -24,7 +36,38 @@ When you arrive at a fork in the road, take it.
 
 ## Project Specification
 
-To qualify for any bounties please review the project specification document. If any questions/concerns arise please open an issue or contact @kamescg directly.
+To qualify for any bounties please review the project specification document. Certain technical requirements must be met to qualify.
+
+If any questions/concerns arise please open an issue or contact @kamescg directly.
+
+_Project Structure_
+
+- Frontend Application
+- MetaMask Snap
+- DeFi Modules
+
+_Technical Objectives_
+
+- Decentralized Finance Composability
+- Atomic Transactions w/ Failure Resistance
+- ~Optimistic~ Automated UI
+- WASM Optimizations
+
+##### Folder Structure
+
+- apps
+- site
+- snap
+- modules
+- ethers-react-system
+-
+
+* Application Installation Page
+* MetaMask Snap
+* Automated Decentralized Finance Transactions
+* User Difficulty Mode Selection
+* Deadman Switch
+* Backup Service for Trust Anchor to Recover Funds (Strech Goal)
 
 ### Application
 
